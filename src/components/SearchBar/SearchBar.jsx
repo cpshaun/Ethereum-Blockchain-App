@@ -72,7 +72,6 @@ const SearchBar = () => {
   return (
       <div className="section-search">
           <h3>The Ethereum Blockchain Explorer</h3>
-          {/* <div className="ui action input"> */}
             <Input 
               type="text" 
               placeholder="Search For Specific Block or Transaction(Hash)"
@@ -89,10 +88,8 @@ const SearchBar = () => {
                 <Icon name='search'/>
               </Button>
             </Input>
-          {/* </div> */}
           <h4>{error}</h4>
           {open && <Result callbackModal ={callbackModal} blockData={blockResult} txData={txResult} open={open}/>}
-          {/* {open && <Result callbackModal={callbackModal} blockNum={blockNumInput} txHash={txHashInput} open={open}/>} */}
       </div>
   )
 }
