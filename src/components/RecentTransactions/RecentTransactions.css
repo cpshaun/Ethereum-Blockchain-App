@@ -1,0 +1,65 @@
+.table-transactions {
+    max-height: 700px;
+    overflow-y: scroll;
+    border: 1px solid rgba(34,36,38,.1);
+    border-radius: 6px;
+}
+body ::-webkit-scrollbar {
+    width: 6px !important;
+}
+body ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.2) !important;
+}
+
+.table-head {
+    position: sticky;
+    top:0;
+    z-index: 2;
+    border:1px solid rgba(34,36,38,.15);
+    border-radius: 6px;
+    background-color:#F9FAFB;
+}
+
+.ui.table thead th {
+    border: 1px solid rgba(34,36,38,.1);
+}
+
+.tx-detail {
+    display: flex;
+}
+.tx-hash {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tx-hash--button {
+    background-color: white;
+    color: #2185d0;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display:block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tx-hash p {    
+    padding: 0;
+    margin: 0;
+}
+.eth-reward {
+    text-align: right !important;
+}
+.tag:before {
+    transform: translateY(-50%) translateX(40%) rotate(45deg) !important;
+    background-color: white !important;
+}
+.tag:after {
+    display: none;
+}
+
+

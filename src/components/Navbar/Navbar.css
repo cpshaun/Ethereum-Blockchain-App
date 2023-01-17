@@ -1,0 +1,12 @@
+nav {
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: #21325b;
+    position: sticky;
+}
+
+nav h2 {
+    font-size:24px;
+    font-family:'Courier';
+    font-weight:500;
+}

@@ -1,0 +1,13 @@
+.section-overview {
+    padding: 0 2rem;
+    background-color:white;
+}
+
+.section-overview--heading,.section-overview--latest {
+    position: relative;
+    top: -100px;
+}
+
+.refresh-button {
+    margin-left: 1rem !important;
+}
