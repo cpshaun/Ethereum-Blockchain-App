@@ -11,6 +11,7 @@ const EthOverview = () => {
 
     const [latestBlock,setLatestBlock] = useState(0);
 
+    // Get latestBlock once on page load
     useEffect(()=> {
         web3.eth.getBlockNumber().then((res) => {
             setLatestBlock(res);            
@@ -27,6 +28,7 @@ const EthOverview = () => {
     console.log("Latest Ethereum Block is ",latestBlock);
     
     const numRows = 10;
+    // Update latest blocks and transactions 
     const getLatestBlocks = () => {
         if(latestBlock){
             return <RecentBlocks latestBlock={latestBlock} numRows={numRows}/>
